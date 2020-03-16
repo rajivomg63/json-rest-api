@@ -1,0 +1,1558 @@
+{
+  "objectIdFieldName" : "objectid", 
+  "uniqueIdField" : 
+  {
+    "name" : "objectid", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdFieldName" : "globalid", 
+  "geometryType" : "esriGeometryPoint", 
+  "spatialReference" : {
+    "wkid" : 4326, 
+    "latestWkid" : 4326
+  }, 
+  "fields" : [
+    {
+      "name" : "objectid", 
+      "type" : "esriFieldTypeOID", 
+      "alias" : "ObjectID", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "globalid", 
+      "type" : "esriFieldTypeGlobalID", 
+      "alias" : "GlobalID", 
+      "sqlType" : "sqlTypeGUID", 
+      "length" : 38, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "NEW_SITE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "NEW_SITE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_NEW_SITE", 
+        "codedValues" : [
+          {
+            "name" : "Yes", 
+            "code" : "X"
+          }, 
+          {
+            "name" : "No", 
+            "code" : "N"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "UPDATE_SITE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "UPDATE_SITE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_UPDATE_SITE", 
+        "codedValues" : [
+          {
+            "name" : "Yes", 
+            "code" : "X"
+          }, 
+          {
+            "name" : "No", 
+            "code" : "N"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SITE_ID", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SITE_ID", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "FIELD_LAT", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "FIELD_LAT", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "FIELD_LON", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "FIELD_LON", 
+      "sqlType" : "sqlTypeOther", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "BASIN_NEW", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "BASIN_NEW", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LOCATION_NEW", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LOCATION_NEW", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "DESCRIPT", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "DESCRIPT", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "COLL_DATE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "COLL_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ARRIVETIME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ARRIVETIME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "COLL_DATE_TIME", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "COLL_DATE_TIME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "DEC_SDG", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LAB_SDG", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CREW", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "CREW", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CURRENT_WEATHER", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "CURRENT_WEATHER", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_CURRENT_WEATHER", 
+        "codedValues" : [
+          {
+            "name" : "☀️", 
+            "code" : "Sun"
+          }, 
+          {
+            "name" : "⛅", 
+            "code" : "Clouds"
+          }, 
+          {
+            "name" : "🌧️", 
+            "code" : "Rain"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PAST_WEATHER", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PAST_WEATHER", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_PAST_WEATHER", 
+        "codedValues" : [
+          {
+            "name" : "☀️", 
+            "code" : "Sun"
+          }, 
+          {
+            "name" : "⛅", 
+            "code" : "Clouds"
+          }, 
+          {
+            "name" : "🌧️", 
+            "code" : "Rain"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRIM_CONTACT", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PRIM_CONTACT", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 5, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_PRIM_CONTACT", 
+        "codedValues" : [
+          {
+            "name" : "a. Beautiful, could not be nicer. Ability to swim, wade, dive, water ski, etc…fully attained.", 
+            "code" : "A"
+          }, 
+          {
+            "name" : "b. Minor aesthetic problems, but still excellent for 1° contact recreation.", 
+            "code" : "B"
+          }, 
+          {
+            "name" : "c. 1° contact recreation slightly impacted.", 
+            "code" : "C"
+          }, 
+          {
+            "name" : "d. Desire to participate in 1° contact recreation substantially reduced.", 
+            "code" : "D"
+          }, 
+          {
+            "name" : "e. Awful! 1° contact recreation impossible.", 
+            "code" : "E"
+          }, 
+          {
+            "name" : "f. Not applicable \u003ci\u003e(headwater/high flows/dry, etc.)\u003c/i\u003e", 
+            "code" : "F"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SEC_CONTACT", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SEC_CONTACT", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 5, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_SEC_CONTACT", 
+        "codedValues" : [
+          {
+            "name" : "a. Beautiful, could not be nicer. Ability to fish and boat fully attained.", 
+            "code" : "A"
+          }, 
+          {
+            "name" : "b. Minor aesthetic problems, but still excellent for 2° contact recreation.", 
+            "code" : "B"
+          }, 
+          {
+            "name" : "c. 2° contact recreation slightly impacted.", 
+            "code" : "C"
+          }, 
+          {
+            "name" : "d. Desire to participate in 2° contact recreation substantially reduced.", 
+            "code" : "D"
+          }, 
+          {
+            "name" : "e. Awful! 2° contact recreation impossible.", 
+            "code" : "E"
+          }, 
+          {
+            "name" : "f. Not applicable \u003ci\u003e(headwater/high flows/dry, etc.)\u003c/i\u003e", 
+            "code" : "F"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "WATER_CLARITY", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "WATER_CLARITY", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_WATER_CLARITY", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SUSP_PHYTOPLANKTON", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SUSP_PHYTOPLANKTON", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_SUSP_PHYTOPLANKTON", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PERIPHYTON", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PERIPHYTON", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_PERIPHYTON", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MACROPHYTE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "MACROPHYTE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_MACROPHYTE", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ODOR", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ODOR", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_ODOR", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "TRASH", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "TRASH", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_TRASH", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "DISCHARGE_PIPES", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "DISCHARGE_PIPES", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_DISCHARGE_PIPES", 
+        "codedValues" : [
+          {
+            "name" : "0", 
+            "code" : "0"
+          }, 
+          {
+            "name" : "1", 
+            "code" : "1"
+          }, 
+          {
+            "name" : "2", 
+            "code" : "2"
+          }, 
+          {
+            "name" : "3", 
+            "code" : "3"
+          }, 
+          {
+            "name" : "4", 
+            "code" : "4"
+          }, 
+          {
+            "name" : "5", 
+            "code" : "5"
+          }, 
+          {
+            "name" : "6", 
+            "code" : "6"
+          }, 
+          {
+            "name" : "7", 
+            "code" : "7"
+          }, 
+          {
+            "name" : "8", 
+            "code" : "8"
+          }, 
+          {
+            "name" : "9", 
+            "code" : "9"
+          }, 
+          {
+            "name" : "10", 
+            "code" : "10"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRIM_VARIABLE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PRIM_VARIABLE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_PRIM_VARIABLE", 
+        "codedValues" : [
+          {
+            "name" : "Water Clarity", 
+            "code" : "Water_Clarity"
+          }, 
+          {
+            "name" : "Suspended Phytoplankton", 
+            "code" : "Suspended_Phytoplankton"
+          }, 
+          {
+            "name" : "Periphyton", 
+            "code" : "Periphyton"
+          }, 
+          {
+            "name" : "Macrophyte", 
+            "code" : "Macrophyte"
+          }, 
+          {
+            "name" : "Odor", 
+            "code" : "Odor"
+          }, 
+          {
+            "name" : "Trash", 
+            "code" : "Trash"
+          }, 
+          {
+            "name" : "Discharge/Pipes", 
+            "code" : "Discharge/Pipes"
+          }, 
+          {
+            "name" : "Proximity to Development Roads", 
+            "code" : "Proximity_to_Development_Roads"
+          }, 
+          {
+            "name" : "Proximity to Development Buildings", 
+            "code" : "Proximity_to_Development_Buildings"
+          }, 
+          {
+            "name" : "Other", 
+            "code" : "Other"
+          }, 
+          {
+            "name" : "None", 
+            "code" : "None"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SEC_VARIABLE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SEC_VARIABLE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 50, 
+      "domain" : 
+      {
+        "type" : "codedValue", 
+        "name" : "cvd_SEC_VARIABLE", 
+        "codedValues" : [
+          {
+            "name" : "Water Clarity", 
+            "code" : "Water_Clarity"
+          }, 
+          {
+            "name" : "Suspended Phytoplankton", 
+            "code" : "Suspended_Phytoplankton"
+          }, 
+          {
+            "name" : "Periphyton", 
+            "code" : "Periphyton"
+          }, 
+          {
+            "name" : "Macrophyte", 
+            "code" : "Macrophyte"
+          }, 
+          {
+            "name" : "Odor", 
+            "code" : "Odor"
+          }, 
+          {
+            "name" : "Trash", 
+            "code" : "Trash"
+          }, 
+          {
+            "name" : "Discharge/Pipes", 
+            "code" : "Discharge/Pipes"
+          }, 
+          {
+            "name" : "Proximity to Development Roads", 
+            "code" : "Proximity_to_Development_Roads"
+          }, 
+          {
+            "name" : "Proximity to Development Buildings", 
+            "code" : "Proximity_to_Development_Buildings"
+          }, 
+          {
+            "name" : "Other", 
+            "code" : "Other"
+          }, 
+          {
+            "name" : "None", 
+            "code" : "None"
+          }
+        ]
+      }, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "USER_COMMENTS", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "USER_COMMENTS", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CreationDate", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "CreationDate", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Creator", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Creator", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 128, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "EditDate", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "EditDate", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Editor", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Editor", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 128, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "features" : [
+    {
+      "attributes" : {
+        "objectid" : 25, 
+        "globalid" : "1481263b-d3e3-40f9-9ea9-558236dc6a4f", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-ROOD-0.2", 
+        "FIELD_LAT" : 42.005698, 
+        "FIELD_LON" : -75.358089, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "08:32", 
+        "COLL_DATE_TIME" : 1566462720000, 
+        "DEC_SDG" : "081919CO1W", 
+        "CREW" : "Schnore,Lemley", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "B", 
+        "WATER_CLARITY" : "2", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "1", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "3", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "None", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566477197181, 
+        "Creator" : "gavin.lemley@dec.ny.gov_nysdec", 
+        "EditDate" : 1566477197181, 
+        "Editor" : "gavin.lemley@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -75.358089, 
+        "y" : 42.005698
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 26, 
+        "globalid" : "457806b7-4602-48a2-a9e3-c0c0934bfc38", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-BASS-0.2", 
+        "FIELD_LAT" : 42.3900437867664, 
+        "FIELD_LON" : -74.6474272013406, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "12:50", 
+        "COLL_DATE_TIME" : 1566478200000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "D", 
+        "SEC_CONTACT" : "N/A", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "3", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "1", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "Proximity_to_Development_Roads", 
+        "USER_COMMENTS" : "Small stream next to highway ", 
+        "CreationDate" : 1566494207448, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494207448, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.647427201340577, 
+        "y" : 42.39004378676637
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 27, 
+        "globalid" : "3f3f9136-b701-473c-89a0-aeae941e8477", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-TOWN_T11-0.2", 
+        "FIELD_LAT" : 42.3546320898853, 
+        "FIELD_LON" : -74.6016425640086, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "12:03", 
+        "COLL_DATE_TIME" : 1566475380000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Rain", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "3", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Periphyton", 
+        "SEC_VARIABLE" : "None", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566494208011, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494208011, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.601642564008571, 
+        "y" : 42.354632089885278
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 28, 
+        "globalid" : "eeb198ee-42b9-40e5-977a-1bc97e67315a", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-EDEL-55.3", 
+        "FIELD_LAT" : 42.1619040146863, 
+        "FIELD_LON" : -74.6197249275396, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "10:49", 
+        "COLL_DATE_TIME" : 1566470940000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Rain", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "0", 
+        "SUSP_PHYTOPLANKTON" : "1", 
+        "PERIPHYTON" : "3", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "1", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "Proximity_to_Development_Roads", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566494208356, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494208356, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.619724927539579, 
+        "y" : 42.161904014686272
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 29, 
+        "globalid" : "4ad7b231-c7c3-4710-a106-0e0a5c8b3486", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-DRBR-2.1", 
+        "FIELD_LAT" : 42.140737, 
+        "FIELD_LON" : -74.603759, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "10:01", 
+        "COLL_DATE_TIME" : 1566468060000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Sun", 
+        "PAST_WEATHER" : "Rain", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "C", 
+        "WATER_CLARITY" : "0", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "3", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "Proximity_to_Development_Roads", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566494208605, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494208605, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.603759, 
+        "y" : 42.140737
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 30, 
+        "globalid" : "2a0d583f-77b1-458a-a845-1fe3d4fdeb7a", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-WDEL-35.4", 
+        "FIELD_LAT" : 42.12861, 
+        "FIELD_LON" : -75.16055, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "08:37", 
+        "COLL_DATE_TIME" : 1566463020000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Rain", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "1", 
+        "PERIPHYTON" : "4", 
+        "MACROPHYTE" : "1", 
+        "ODOR" : "0", 
+        "TRASH" : "1", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "None", 
+        "USER_COMMENTS" : "NYC dep reservoir access site with porta John ", 
+        "CreationDate" : 1566494208854, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494208854, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -75.16055, 
+        "y" : 42.12861
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 31, 
+        "globalid" : "17d9c98b-0577-486d-aeac-59c9f47c9087", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-SPRB-0.5", 
+        "FIELD_LAT" : 41.9679750642199, 
+        "FIELD_LON" : -74.8986526206833, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "08:35", 
+        "COLL_DATE_TIME" : 1566462900000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Rain", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "0", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "2", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "None", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566494209058, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494209058, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.898652620683322, 
+        "y" : 41.967975064219878
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 32, 
+        "globalid" : "420e8838-a305-4a67-b919-fe6609194c8b", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-BEAV-18.5", 
+        "FIELD_LAT" : 41.9663869869355, 
+        "FIELD_LON" : -74.8937852495116, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "07:51", 
+        "COLL_DATE_TIME" : 1566460260000, 
+        "DEC_SDG" : "082219CO3W", 
+        "CREW" : "Lojpersberger,Stoll", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Rain", 
+        "PRIM_CONTACT" : "A", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "0", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "1", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "None", 
+        "SEC_VARIABLE" : "None", 
+        "USER_COMMENTS" : "Beautiful trout stream ", 
+        "CreationDate" : 1566494209606, 
+        "Creator" : "charles.stoll@dec.ny.gov_nysdec", 
+        "EditDate" : 1566494209606, 
+        "Editor" : "charles.stoll@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.893785249511609, 
+        "y" : 41.966386986935476
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 41, 
+        "globalid" : "2bd27248-f611-4420-90d8-ef3c67b289b5", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-BETT-0.1", 
+        "FIELD_LAT" : 42.345162, 
+        "FIELD_LON" : -74.733405, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "12:12", 
+        "COLL_DATE_TIME" : 1566475920000, 
+        "DEC_SDG" : "081919CO2W", 
+        "CREW" : "Conine,Duffy", 
+        "CURRENT_WEATHER" : "Sun", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "C", 
+        "SEC_CONTACT" : "B", 
+        "WATER_CLARITY" : "3", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "3", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "2", 
+        "TRASH" : "1", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "Water_Clarity", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566500989549, 
+        "Creator" : "brian.duffy@dec.ny.gov_nysdec", 
+        "EditDate" : 1566500989549, 
+        "Editor" : "brian.duffy@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.733405, 
+        "y" : 42.345162
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 42, 
+        "globalid" : "9ee003f6-3cff-4464-8d7f-2cdf581152ad", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "X", 
+        "SITE_ID" : "14-STEL-1.6", 
+        "FIELD_LAT" : 42.2958252439669, 
+        "FIELD_LON" : -74.9352036696625, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "0.5 mi up road from bridge. Stream runs right along the road", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "11:22", 
+        "COLL_DATE_TIME" : 1566472920000, 
+        "DEC_SDG" : "081919CO2W", 
+        "CREW" : "Conine,Duffy", 
+        "CURRENT_WEATHER" : "Sun", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "5", 
+        "MACROPHYTE" : "1", 
+        "ODOR" : "2", 
+        "TRASH" : "3", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Periphyton", 
+        "SEC_VARIABLE" : "Trash", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566500990190, 
+        "Creator" : "brian.duffy@dec.ny.gov_nysdec", 
+        "EditDate" : 1566500990190, 
+        "Editor" : "brian.duffy@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.935203669662528, 
+        "y" : 42.295825243966931
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 43, 
+        "globalid" : "c23cdb27-75f1-409e-88b7-f4d9f052492a", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-WDEL-51.0", 
+        "FIELD_LAT" : 42.20917, 
+        "FIELD_LON" : -74.97417, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "10:21", 
+        "COLL_DATE_TIME" : 1566469260000, 
+        "DEC_SDG" : "081919CO2W", 
+        "CREW" : "Conine,Duffy", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "C", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "3", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "6", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "3", 
+        "TRASH" : "3", 
+        "DISCHARGE_PIPES" : "1", 
+        "PRIM_VARIABLE" : "Periphyton", 
+        "SEC_VARIABLE" : "Water_Clarity", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566500990414, 
+        "Creator" : "brian.duffy@dec.ny.gov_nysdec", 
+        "EditDate" : 1566500990414, 
+        "Editor" : "brian.duffy@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.97417, 
+        "y" : 42.20917
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 44, 
+        "globalid" : "281ad215-59d3-44b6-9371-6c16fda3475b", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-ESTB-2.2", 
+        "FIELD_LAT" : 42.186851, 
+        "FIELD_LON" : -75.099168, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "09:19", 
+        "COLL_DATE_TIME" : 1566465540000, 
+        "DEC_SDG" : "081919CO2W", 
+        "CREW" : "Conine,Duffy", 
+        "CURRENT_WEATHER" : "Sun", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "3", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "1", 
+        "TRASH" : "1", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Periphyton", 
+        "SEC_VARIABLE" : "Proximity_to_Development_Roads", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566500990712, 
+        "Creator" : "brian.duffy@dec.ny.gov_nysdec", 
+        "EditDate" : 1566500990712, 
+        "Editor" : "brian.duffy@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -75.099168, 
+        "y" : 42.186851
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 45, 
+        "globalid" : "c07e9fb4-fc08-45dc-84e4-3863e5411728", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-CHOL-0.4", 
+        "FIELD_LAT" : 42.065218, 
+        "FIELD_LON" : -74.941349, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "08:30", 
+        "COLL_DATE_TIME" : 1566462600000, 
+        "DEC_SDG" : "081919CO2W", 
+        "CREW" : "Conine,Duffy", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "A", 
+        "SEC_CONTACT" : "A", 
+        "WATER_CLARITY" : "0", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "1", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "None", 
+        "SEC_VARIABLE" : "None", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566500990879, 
+        "Creator" : "brian.duffy@dec.ny.gov_nysdec", 
+        "EditDate" : 1566500990879, 
+        "Editor" : "brian.duffy@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -74.941349, 
+        "y" : 42.065218
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 63, 
+        "globalid" : "4796d5db-6d92-4764-9e5f-5ddc8d0084cd", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-THRD-2.3", 
+        "FIELD_LAT" : 42.194798, 
+        "FIELD_LON" : -75.155098, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "12:20", 
+        "COLL_DATE_TIME" : 1566476400000, 
+        "DEC_SDG" : "081919CO1W", 
+        "CREW" : "Schnore,Lemley", 
+        "CURRENT_WEATHER" : "Rain", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "B", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "1", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "Proximity_to_Development_Roads", 
+        "SEC_VARIABLE" : "N/A", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566502872764, 
+        "Creator" : "gavin.lemley@dec.ny.gov_nysdec", 
+        "EditDate" : 1566502872764, 
+        "Editor" : "gavin.lemley@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -75.155098, 
+        "y" : 42.194798
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 64, 
+        "globalid" : "c8bdb5e9-4260-49b2-bc08-83f3fc25183b", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-COLD_T7-1.1", 
+        "FIELD_LAT" : 42.157587, 
+        "FIELD_LON" : -75.391342, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "11:39", 
+        "COLL_DATE_TIME" : 1566473940000, 
+        "DEC_SDG" : "081919CO1W", 
+        "CREW" : "Schnore,Lemley", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "B", 
+        "SEC_CONTACT" : "B", 
+        "WATER_CLARITY" : "0", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "1", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "None", 
+        "SEC_VARIABLE" : "N/A", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566502873052, 
+        "Creator" : "gavin.lemley@dec.ny.gov_nysdec", 
+        "EditDate" : 1566502873052, 
+        "Editor" : "gavin.lemley@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -75.391342, 
+        "y" : 42.157587
+      }
+    }, 
+    {
+      "attributes" : {
+        "objectid" : 65, 
+        "globalid" : "09d61106-06fd-4f28-a676-ed3bd87115ec", 
+        "NEW_SITE" : "N", 
+        "UPDATE_SITE" : "N", 
+        "SITE_ID" : "14-COLD_T7-1.1", 
+        "FIELD_LAT" : 42.157587, 
+        "FIELD_LON" : -75.391342, 
+        "BASIN_NEW" : "N/A", 
+        "LOCATION_NEW" : "N/A", 
+        "DESCRIPT" : "N/A", 
+        "COLL_DATE" : "08/22/19", 
+        "ARRIVETIME" : "08:44", 
+        "COLL_DATE_TIME" : 1566463440000, 
+        "DEC_SDG" : "081919CO1W", 
+        "CREW" : "Schnore,Lemley", 
+        "CURRENT_WEATHER" : "Clouds", 
+        "PAST_WEATHER" : "Clouds", 
+        "PRIM_CONTACT" : "F", 
+        "SEC_CONTACT" : "F", 
+        "WATER_CLARITY" : "1", 
+        "SUSP_PHYTOPLANKTON" : "0", 
+        "PERIPHYTON" : "1", 
+        "MACROPHYTE" : "0", 
+        "ODOR" : "0", 
+        "TRASH" : "0", 
+        "DISCHARGE_PIPES" : "0", 
+        "PRIM_VARIABLE" : "N/A", 
+        "SEC_VARIABLE" : "N/A", 
+        "USER_COMMENTS" : null, 
+        "CreationDate" : 1566502873269, 
+        "Creator" : "gavin.lemley@dec.ny.gov_nysdec", 
+        "EditDate" : 1566502873269, 
+        "Editor" : "gavin.lemley@dec.ny.gov_nysdec"
+      }, 
+      "geometry" : 
+      {
+        "x" : -75.391342, 
+        "y" : 42.157587
+      }
+    }
+  ]
+}
