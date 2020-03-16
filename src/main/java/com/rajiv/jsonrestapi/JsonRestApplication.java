@@ -13,11 +13,11 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class WqmaApplication extends SpringBootServletInitializer{
+public class JsonRestApplication extends SpringBootServletInitializer{
 	
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(WqmaApplication.class);
+        return application.sources(JsonRestApplication.class);
     }
 	
 	/*@Bean
@@ -46,7 +46,7 @@ public class WqmaApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		//System.setProperty("server.servlet.context-path","/wqma");
-		SpringApplication.run(WqmaApplication.class, args);
+		SpringApplication.run(JsonRestApplication.class, args);
 	}
 
 }
